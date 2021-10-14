@@ -1,7 +1,7 @@
 import os
 import sys
 
-class Colors:
+class Colorfuls:
 
         reset = ""
         red = ""
@@ -25,11 +25,11 @@ class Colors:
                         self.cyan = "\u001b[36m"
                         self.white = "\u001b[37m"
                 elif 'win32' in str(sys.platform).lower() or 'windows' in str(sys.platform).lower():
-                        self.reset = "Esc[0m"
-                        self.red = "Esc[31m"
-                        self.green = "Esc[92m"
-                        self.yellow = "Esc[93m"
-                        self.blue = "Esc[34m"
-                        self.magenta = "Esc[35m"
-                        self.cyan = "Esc[96m"
-                        self.white = "Esc[97m"
+                        self.reset = "\033[0m"
+                        self.red = "\033[31m"
+                        self.green = "\033[32m"
+                        self.yellow = "\033[33m"
+                        self.blue = "\033[34m"
+                        self.magenta = "\033[34m"
+                        self.cyan = "\033[36m"
+                        self.white = "\033[37m"
